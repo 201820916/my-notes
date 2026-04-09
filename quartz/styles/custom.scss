@@ -1,3 +1,53 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+:root[saved-theme="dark"] {
+  --dark: #0f1117;
+  --darkgray: #1e2030;
+  --gray: #3b3f51;
+  --lightgray: #2a2d3e;
+  --light: #1a1d2e;
+  --secondary: #7aa2f7;
+  --tertiary: #bb9af7;
+  --highlight: rgba(122, 162, 247, 0.1);
+}
+
+:root[saved-theme="light"] {
+  --dark: #1a1b26;
+  --darkgray: #414868;
+  --gray: #787c99;
+  --lightgray: #e9e9ed;
+  --light: #f5f5f7;
+  --secondary: #2563eb;
+  --tertiary: #7c3aed;
+  --highlight: rgba(37, 99, 235, 0.08);
+}
+
+body {
+  font-family: "Pretendard", "Apple SD Gothic Neo", sans-serif;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.page-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+article {
+  line-height: 1.8;
+}
+
+.callout {
+  border-radius: 8px;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
